@@ -7,6 +7,8 @@ import cookieParser from "cookie-parser";
 import helmet from "helmet";
 
 
+import collectionRoute from './routes/CollectionRoute.js'
+
 
 dotenv.config()
 const app =express()
@@ -19,7 +21,7 @@ const corsOptions={
 }
 
 //database connection
-//mongoose.set("strictQuery",false)//remove the error in the console
+mongoose.set("strictQuery",false)//remove the error in the console
 const connect =async()=>{
     try{
        
@@ -41,6 +43,8 @@ app.use(cookieParser());
 app.use(morgan('tiny'));
 app.use(helmet());
 app.use("/uploads",express.static('uploads'))
+
+app.use("/api/collection",collectionRoute)
 
 
 // server listening
