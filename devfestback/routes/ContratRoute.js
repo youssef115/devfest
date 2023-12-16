@@ -1,5 +1,5 @@
 import express  from "express";
-import { addContrat,getContrats,updateContrat,deleteContrat,getContratbyid } from "../Controller/ContratController"
+import { addContrat,getContrats,updateContrat,deleteContrat,getContratbyid } from "../controllers/ContratController"
 const router = express.Router();
 
 router.get("/getContrat/:id",getContratbyid)

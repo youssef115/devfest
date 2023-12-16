@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { addCollection, getAllCollection, getOneCollection, updateCollection } from '../controller/CollectionController.js'
+import { addCollection, getAllCollection, getOneCollection, updateCollection } from '../controllers/CollectionController.js'
 const router=express.Router();
 
 router.post("/", addCollection)
