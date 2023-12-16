@@ -6,7 +6,8 @@ import cors from 'cors'
 import cookieParser from "cookie-parser";
 import helmet from "helmet";
 
-
+import postRoute from "./routes/PostRoute"
+import ContratRoute from "./routes/ContratRoute"
 
 dotenv.config()
 const app =express()
@@ -42,6 +43,8 @@ app.use(morgan('tiny'));
 app.use(helmet());
 app.use("/uploads",express.static('uploads'))
 
+app.use('/api/post',postRoute)
+app.use('/api/Contract',ContratRoute)
 
 // server listening
 app.listen(port,()=>{
