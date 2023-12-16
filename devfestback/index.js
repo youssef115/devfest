@@ -7,7 +7,12 @@ import cookieParser from "cookie-parser";
 import helmet from "helmet";
 
 
+
 import collectionRoute from './routes/CollectionRoute.js'
+
+
+import postRoute from "./routes/PostRoute"
+import ContratRoute from "./routes/ContratRoute"
 
 
 dotenv.config()
@@ -44,7 +49,12 @@ app.use(morgan('tiny'));
 app.use(helmet());
 app.use("/uploads",express.static('uploads'))
 
+
 app.use("/api/collection",collectionRoute)
+
+
+app.use('/api/post',postRoute)
+app.use('/api/Contract',ContratRoute)
 
 
 // server listening
