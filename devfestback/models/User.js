@@ -19,7 +19,7 @@ const User = new mongoose.Schema(
         },
         nom: {
             type: String,
-            required: true,
+            required: false,
         },
         prenom: {
             type: String,
