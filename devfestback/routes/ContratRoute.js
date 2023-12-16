@@ -1,10 +1,10 @@
 import express  from "express";
-import { addContrat,getContrats,updateContrat,deleteContrat,getContratbyid } from "../controllers/ContratController"
+import { addContrat,getContrats,updateContrat,deleteContrat,getContratbyid } from "../controllers/ContratController.js"
 const router = express.Router();
 
 router.get("/getContrat/:id",getContratbyid)
 router.get("/all",getContrats)
-router.Contrat("/addContrat",addContrat)
+router.post("/addContrat",addContrat)
 router.put("/updateContrat/:id",updateContrat)
 router.delete("/deleteContrat/:id",deleteContrat)
 

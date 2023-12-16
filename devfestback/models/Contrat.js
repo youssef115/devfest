@@ -1,6 +1,6 @@
-const mongoose=require('mongoose')
+import mongoose from 'mongoose';
 
-const PostSchema = new mongoose.Schema(
+const ContratSchema = new mongoose.Schema(
     {
         title :{ type:String,required:true,unique:true},
         desc:{type:String,required:true},
@@ -10,4 +10,4 @@ const PostSchema = new mongoose.Schema(
         //remplace createdAt
     },{timestamps:true}
 )
-module.exports= mongoose.model("Post",PostSchema)
+export default  mongoose.model("Contrat",ContratSchema)

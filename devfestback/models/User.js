@@ -2,11 +2,7 @@ import mongoose from 'mongoose';
 
 const User = new mongoose.Schema(
     {
-        Id: {
-            type: int,
-            required: true,
-
-        },
+      
         email: {
             type: String,
             required: true,
@@ -29,7 +25,7 @@ const User = new mongoose.Schema(
             type: String,
         },
         nbre_etoile: {
-            type: int,
+            type: Number,
             default: 0
         },
         nationality: {
@@ -37,7 +33,7 @@ const User = new mongoose.Schema(
 
         },
         carte_Bancaire: {
-            type: int,
+            type: Number,
         },
         matricule: {
             type: String,

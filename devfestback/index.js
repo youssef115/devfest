@@ -10,9 +10,9 @@ import helmet from "helmet";
 
 import collectionRoute from './routes/CollectionRoute.js'
 
-
-import postRoute from "./routes/PostRoute"
-import ContratRoute from "./routes/ContratRoute"
+import authRoute from './routes/auth.js'
+import postRoute from "./routes/PostRoute.js"
+import ContratRoute from "./routes/ContratRoute.js"
 
 
 dotenv.config()
@@ -52,7 +52,7 @@ app.use("/uploads",express.static('uploads'))
 
 app.use("/api/collection",collectionRoute)
 
-
+app.use('/api/auth',authRoute)
 app.use('/api/post',postRoute)
 app.use('/api/Contract',ContratRoute)
 

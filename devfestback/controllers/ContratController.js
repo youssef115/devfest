@@ -1,5 +1,4 @@
-import Contrat  from '../models/Contrat'
-
+import Contrat from '../models/Contrat.js'
 export const getContratbyid = async (req,res)=>{
     try{
     const Contrat=await Contrat.findById(req.params.id)

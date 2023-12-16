@@ -1,5 +1,5 @@
-import Collection from "../models/Collection";
-
+import Collection from "../models/Collection.js";
+import User from "../models/User.js";
 export const addCollection=async (req,res)=>{
     try{
         const checkUser =await User.findById(req.body.personId)

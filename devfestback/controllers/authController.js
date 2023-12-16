@@ -1,4 +1,4 @@
-import User from "./models/User.js"
+import User from "../models/User.js";
 import bcrypt from "bcryptjs"
 import jwt from "jsonwebtoken"
 
@@ -9,8 +9,10 @@ export const register = async (req, res) => {
         const salt = bcrypt.genSaltSync(10);
         const hash = bcrypt.hashSync(req.body.password, salt);
 
+        let newUser={}
+
         if (req.body.type === 'persons') {
-            const newUser = new User({
+             newUser = new User({
                 email: req.body.email,
                 password: hash,
                 type: req.body.type,
@@ -21,7 +23,7 @@ export const register = async (req, res) => {
                 carte_Bancaire: req.body.carte_Bancaire,
             })
         } else if (req.body.type === 'sos') {
-            const newUser = new User({
+             newUser = new User({
                 email: req.body.email,
                 password: hash,
                 type: req.body.type,
@@ -30,7 +32,7 @@ export const register = async (req, res) => {
                 image: req.body.image,
             })
         }else {
-            const newUser =new User({
+             newUser =new User({
                 email: req.body.email,
                 password: hash,
                 type: req.body.type,
@@ -103,6 +105,7 @@ export const login = async (req, res) => {
                 role,
             });
     } catch (err) {
+        console.log(err.message);
         res.status(500).json({ success: false, message: "Failed to login" });
     }
 };
