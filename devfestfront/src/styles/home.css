@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap");
+
+.hero__text {
+  font-family: "Lugrasimo", cursive;
+}
+
+.heroSection {
+    width: 100%;
+    height: 90vh;
+    background: url("../assets/386.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  
+  .Shadow {
+    width: 100%;
+    height: 100%;
+    background: #e0080831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  
+  .home__btn {
+    color: #fff;
+    background: #EF4444;
+    width: 200px;
+    height: 45px;
+    border-radius: 100px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .Shadow p {
+    color: #fff;
+    font-size: 30px;
+  }
+  /*Scroll bar code*/
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #EF4444;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
