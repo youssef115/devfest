@@ -6,7 +6,7 @@ function Collection() {
 
   const [productData,setProductData] =useState([])
    useEffect(()=>{
-
+     
    },[])
   return (
     <>

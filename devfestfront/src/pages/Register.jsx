@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Register() {
+
+
+
+const Register = () => {
   return (
-    <div className='mt-50'>Register</div>
+    <div>Register</div>
+
   )
 }
 

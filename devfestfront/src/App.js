@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import { Routes, Route } from "react-router-dom";
@@ -5,7 +6,11 @@ import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Collection from './components/Collection/Collection';
 import Login from './pages/Login';
+
 import Register from './pages/Register';
+
+
+
 function App() {
   return (
     <>

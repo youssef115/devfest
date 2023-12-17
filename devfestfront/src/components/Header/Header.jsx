@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 
-function Header() {
+const Header = () => {
   return (
     <div className=' absolute top-0 left-0 w-screen h-20  z-10 bg-white shadow-md  flex justify-around'>
       <img src={logo} alt=""/>
