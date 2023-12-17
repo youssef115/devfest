@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <div className=' absolute top-0 left-0 w-screen h-20 fixed z-10 bg-white shadow-md  flex justify-around'>
+    <div className=' absolute top-0 left-0 w-screen h-20  z-10 bg-white shadow-md  flex justify-around'>
       <img src={logo} alt=""/>
       <div className='flex gap-2 text-2xl  items-center cursor-pointer'>
           <Link to="/" className='hover:text-red-400'>Home</Link>

@@ -1,8 +1,13 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import MoneyComponent from "../MoneyComponent/MoneyComponent";
 import ProductComponent from "../ProductComponent/ProductComponent";
 import { listOfProducts } from "../../utils/Utils";
 function Collection() {
+
+  const [productData,setProductData] =useState([])
+   useEffect(()=>{
+
+   },[])
   return (
     <>
       <div className="w-screen h-screen flex flex-col items-center justify-center">
