@@ -1,8 +1,11 @@
 import React from 'react'
+import Awarness from '../components/Awarness/Awarness'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Awarness/>
+    </div>
   )
 }
 
