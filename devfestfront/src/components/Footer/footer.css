@@ -1,8 +1,9 @@
 
 .footer{
-    padding-top: 70px;
+    padding-top:10px;
     padding-bottom: 30px; 
     background-color: #EF4444;
+    height: fit-content;
 }
 
 .footer__logo {
@@ -10,8 +11,9 @@
 }
 
 .footer .logo img{
-    width: 30%;
+    width: 50%;
     margin-bottom: 1rem;
+    border-radius: 50px;
 }
 
 .footer .logo p{

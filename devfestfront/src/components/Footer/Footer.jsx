@@ -4,7 +4,7 @@ import './footer.css'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import logo from "../../assets/R.png"
-import logo1 from "../../assets/R.png"
+import logo1 from "../../assets/logo.webp"
 
 const quick__links = [
     {

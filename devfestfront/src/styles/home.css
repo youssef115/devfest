@@ -5,6 +5,15 @@
   font-family: "Lugrasimo", cursive;
 }
 
+.row{
+    margin-top: 50px !important;
+}
+
+.table{
+    border-color: #000;
+    width: 300px;
+}
+
 .heroSection {
     width: 100%;
     height: 90vh;
@@ -40,6 +49,7 @@
   .Shadow p {
     color: #fff;
     font-size: 30px;
+    margin-top: 50px;
   }
   /*Scroll bar code*/
   
