@@ -1,5 +1,8 @@
 import React from 'react'
+
 import { Container, Row, Col } from "reactstrap"
+
+import Awarness from '../components/Awarness/Awarness'
 
 import "../styles/home.css"
 function Home() {
@@ -23,7 +26,6 @@ function Home() {
           Nomber of Donators : 1.000.000
         </p>
         
-
         <div className="row">
             <div className="col-md-6">
               <table className="table">
@@ -70,7 +72,15 @@ function Home() {
 
       </div>
     </div>
-    </>
+    
+
+    <div>
+      <div className='mt-10 mb-52 flex flex-col items-center'>
+      <h1 className='text-2xl text-red-500 font-bold'>Know the truth of Palestine</h1>
+      <Awarness/>
+      </div>
+    </div>
+</>
   )
 }
 
